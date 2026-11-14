@@ -1,0 +1,18 @@
+/* Aprendiz: Nikole Piñarete Oyola | Ficha: 3351732 | estilos.css */
+:root { --verde: #2f8f00; --fondo: #f5f7f2; --texto: #1c2a1f; }  /* Variables CSS con la paleta de colores. */
+* { box-sizing: border-box; }  /* El padding y el borde cuentan dentro del ancho de cada elemento. */
+body { margin: 0; font-family: Arial, sans-serif; background: var(--fondo); color: var(--texto); text-align: center; }  /* Quita el margen, define fuente y colores, y centra el texto. */
+header { background: var(--verde); color: white; padding: 24px 16px; }  /* Encabezado verde con letra blanca y espacio interno. */
+main { padding: 20px 16px; }  /* Separa el contenido de los bordes de la pantalla. */
+.tarjeta { max-width: 360px; margin: auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.15); }  /* Tarjeta de ancho máximo 360px, centrada con margin auto, con esquinas redondeadas y sombra. */
+#qrcode { display: inline-block; padding: 12px; background: white; border: 2px solid var(--verde); border-radius: 10px; }  /* Marco alrededor del QR. El fondo blanco es importante: el QR necesita contraste para que la cámara lo lea. */
+#qrcode img { max-width: 100%; height: auto; }  /* Si la pantalla es muy angosta, el QR se reduce sin deformarse. */
+#enlace { word-break: break-all; font-size: 14px; }  /* Permite partir el enlace largo en varias líneas para que no se salga de la tarjeta. */
+button { background: var(--verde); color: white; border: 0; padding: 10px 16px; border-radius: 6px; font-size: 16px; cursor: pointer; }  /* Estilo del botón: verde, redondeado y con cursor de mano. */
+button:hover { opacity: .85; }  /* Al pasar el mouse el botón se aclara un poco. */
+.exito { color: var(--verde); font-weight: bold; }  /* Estilo del mensaje de confirmación. */
+footer { padding: 16px; color: #4d5f50; }  /* Espacio y color suave para el pie de página. */
+@media (max-width: 600px) {  /* Media query: lo siguiente aplica solo en pantallas de hasta 600px, como un celular. */
+  header h1 { font-size: 22px; }  /* Título más pequeño en celular. */
+  .tarjeta { padding: 14px; }  /* Menos espacio interno para aprovechar la pantalla. */
+}  /* Cierra la media query. */

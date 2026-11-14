@@ -1,0 +1,7 @@
+# Aprendiz: Nikole Piñarete Oyola | Ficha: 3351732 | publicar.txt
+git init  # Convierte la carpeta del proyecto en un repositorio Git.
+git add .  # Prepara todos los archivos de la carpeta para guardarlos.
+git commit -m "Mi proyecto con QR"  # Guarda una versión del proyecto con un mensaje que la describe.
+git branch -M main  # Nombra main a la rama principal, la que GitHub Pages publicará.
+git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git  # Conecta tu carpeta con el repositorio vacío que creaste en GitHub. Escribe la línea tal cual; al ejecutarla en tu terminal cambia TU_USUARIO y TU_REPOSITORIO por los tuyos.
+git push -u origin main  # Sube tus archivos a GitHub.
